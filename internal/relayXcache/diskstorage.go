@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/AshikBN/relayX/internal/infrastructure/logger"
 	"github.com/micvbang/go-helpy/filepathy"
 )
 
@@ -165,7 +166,7 @@ func (cw *cacheWriter) Close() error {
 	}
 	err = os.Rename(cw.tempFile.Name(), cw.destPath)
 	if err != nil {
-		fmt.Errorf("moving %s to %s:%w", cw.tempFile.Name(), cw.destPath, err)
+		return fmt.Errorf("moving %s to %s:%w", cw.tempFile.Name(), cw.destPath, err)
 	}
 	return nil
 
