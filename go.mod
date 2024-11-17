@@ -4,6 +4,7 @@ go 1.23.0
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/klauspost/compress v1.17.10 // indirect
 	github.com/micvbang/go-helpy v0.1.24 // indirect
 	github.com/sirupsen/logrus v1.9.3 // indirect
 	github.com/spf13/cobra v1.8.1 // indirect
