@@ -1,4 +1,4 @@
-package replayxrecords
+package relayxrecords
 
 import (
 	"encoding/binary"
